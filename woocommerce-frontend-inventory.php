@@ -4,7 +4,7 @@
 Plugin Name: WooCommerce - Frontend Inventory
 Plugin URI: 
 Description: This plugin provides a template that can be applied to a page in order to show a full inventory of products in WooCommerce.
-Version: 0.2
+Version: 0.3
 Author: Mirko Grewing
 Author URI: http://www.mirkogrewing.eu
 */

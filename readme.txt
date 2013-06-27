@@ -4,19 +4,21 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=DYXGC
 Tags: WooCommerce, inventory, stock, variations
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable tag: 0.2
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin provides a shortcode that allows to print in a front-end page a full inventory of products listed in WooCommerce.
+This plugin provides a shortcode that allows to print in a front-end page a full inventory of WooCommerce products, variants included.
 
 == Description ==
 
-Do you want to provide some users a **full inventory** of your WooCommerce without giving them access to the WooCommerce configuration area in the Dashboard?
+Do you want to provide some users a **full inventory** of your WooCommerce installation without giving them access to the WooCommerce configuration area in the Dashboard?
 
-This plugin allows you to publish a full inventory in a frontend page with a simple shortcode. Not registered users will get an error message.
+This plugin allows you to publish a full inventory on a frontend page with a simple shortcode. Not registered users will get an error message.
 
-**Please note** this is an early stage version of the plugin and it won't offer any configurable setting or option. It just print the inventory in a page inside the template you are using (it might actually conflict with it for a couple of styles I hardcoded into the file).
+
+
+**Please note** this is an early stage version of the plugin and it won't offer any configurable setting or option. It just prints the inventory in a page inside the template you are using (it might actually conflict with it for a couple of styles I hardcoded into the file).
 
 == Installation ==
 
@@ -32,26 +34,22 @@ Not just yet.
 
 = It messes up with my template, what I can do? =
 
-You are unlucky. The plugin uses a table and a couple of minimal styles. You may want to wait for further releases: customization settings are on the roadmap...
+You are unlucky. The plugin uses a simple table and a couple of minimal styles. Unless you edit the styles directly in the plugin, you may want to wait for further releases: customization settings are on the roadmap...
 
 = Hey, most of the visitors get an error message! =
 
 Only registered users can see that page. And yes, I will add an option for that eventually... :)
 
-== Screenshots ==
-
-1. 
-2. 
-
 == Changelog ==
 
-= = v0.1 = =
+= v0.2 =
+* Typos corrected
 
+= v0.1 =
 * First release
 
 == Upgrade notice ==
 
-
-
-== Arbitrary section 1 ==
+= 0.2 =
+Just a few typos corrected.
 
