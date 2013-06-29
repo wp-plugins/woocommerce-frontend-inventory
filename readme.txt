@@ -4,7 +4,7 @@ Donate link: http://cl.ly/0m1h2L3u0K3Y
 Tags: WooCommerce, inventory, stock, variations
 Requires at least: 3.3
 Tested up to: 3.5.2
-Stable tag: 0.4
+Stable tag: 0.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
