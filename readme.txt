@@ -18,7 +18,8 @@ This plugin allows you to publish a full inventory on a frontend page with a sim
 
 **Please note** this is an early stage version of the plugin and it is very limited at the moment. It just prints the inventory in a page inside the template you are using (it might actually conflict with it for a couple of styles I hardcoded into the file).
 
-Do you want to raise a bug, propose a change, request for support or simply congratulate me? The [Official Page][http://www.mirkogrewing.eu/woocommerce-frontend-inventory/ "Official Page of the Plugin"] is waiting for your voice!
+Do you want to raise a bug, propose a change, request for support or simply congratulate me? The Official Page of the plugin is waiting for your voice!
+http://www.mirkogrewing.eu/woocommerce-frontend-inventory/
 
 == Installation ==
 
