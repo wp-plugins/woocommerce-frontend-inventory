@@ -68,22 +68,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			
 			function plugin_init() {
 				if ( $this->woofi_enabled ) {
-					add_action( 'woocommerce_init', array( &$this, 'woocommerce_loaded' ) );
-				}				
-			}
-			
-			
-			// Load the settings
-			function admin_settings() {
-				woocommerce_admin_fields( $this->settings );
-			}
-
-			// Save the settings
-			function save_admin_settings() {
-				woocommerce_update_options( $this->settings );
-			}
-			
-			public function woocommerce_loaded() {
 					function get_inventory() {
 						//$options = get_option('woofi_options');
 						//$out = (!isset($options['errormessage_template']) || $options['errormessage_template']=="") ? 'Sorry you cannot access here!' : $options['errormessage_template'];
@@ -189,25 +173,36 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 					}
 					add_shortcode( 'woofi', 'get_inventory' );
 				}
+			}
 			
-				//Add support links to plugin page
-				public function add_support_links( $links, $file ) {
-					if ( !current_user_can( 'install_plugins' ) ) {
-						return $links;
-					}
-					if ( $file == WC_WooFI::$plugin_basefile ) {
-						$links[] = '<a href="http://www.mirkogrewing.eu/woocommerce-frontend-inventory/" target="_blank" title="' . __( 'Homepage', 'woocommerce-frontend-inventory' ) . '">' . __( 'Homepage', 'woocommerce-frontend-inventory' ) . '</a>';
-						//$links[] = '<a href="http://wordpress.org/support/plugin/woocommerce-delivery-notes" target="_blank" title="' . __( 'Support', 'woocommerce-delivery-notes' ) . '">' . __( 'Support', 'woocommerce-delivery-notes' ) . '</a>';
-					}
+			// Load the settings
+			function admin_settings() {
+				woocommerce_admin_fields( $this->settings );
+			}
+
+			// Save the settings
+			function save_admin_settings() {
+				woocommerce_update_options( $this->settings );
+			}
+			
+			//Add support links to plugin page
+			public function add_support_links( $links, $file ) {
+				if ( !current_user_can( 'install_plugins' ) ) {
 					return $links;
 				}
-				
-				//Add settings link to plugin page
-				public function add_settings_link( $links ) {
-					$settings = sprintf( '<a href="%s" title="%s">%s</a>' , admin_url( 'admin.php?page=woocommerce&tab=' . $this->settings->tab_name ) , __( 'Go to the settings page', 'woocommerce-delivery-notes' ) , __( 'Settings', 'woocommerce-delivery-notes' ) );
-					array_unshift( $links, $settings );
-					return $links;	
+				if ( $file == WC_WooFI::$plugin_basefile ) {
+					$links[] = '<a href="http://www.mirkogrewing.eu/woocommerce-frontend-inventory/" target="_blank" title="' . __( 'Homepage', 'woocommerce-frontend-inventory' ) . '">' . __( 'Homepage', 'woocommerce-frontend-inventory' ) . '</a>';
+					//$links[] = '<a href="http://wordpress.org/support/plugin/woocommerce-delivery-notes" target="_blank" title="' . __( 'Support', 'woocommerce-delivery-notes' ) . '">' . __( 'Support', 'woocommerce-delivery-notes' ) . '</a>';
 				}
+				return $links;
+			}
+			
+			//Add settings link to plugin page
+			public function add_settings_link( $links ) {
+				$settings = sprintf( '<a href="%s" title="%s">%s</a>' , admin_url( 'admin.php?page=woocommerce&tab=' . $this->settings->tab_name ) , __( 'Go to the settings page', 'woocommerce-delivery-notes' ) , __( 'Settings', 'woocommerce-delivery-notes' ) );
+				array_unshift( $links, $settings );
+				return $links;	
+			}
 			
 		}
 		// Instantiate our plugin class and add it to the set of globals
