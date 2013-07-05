@@ -31,6 +31,10 @@ http://support.mirkogrewing.eu/
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Place `[woofi]` in any page to show the inventory.
 
+== Screenshots ==
+
+1. The inventory on a frontpage.
+
 == Frequently asked questions ==
 
 = Is there anything I can configure? =
