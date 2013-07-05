@@ -8,7 +8,7 @@ Stable tag: 0.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin allows you to publish a full inventory on a frontend page with a simple shortcode. Every registerd user will be able to view it, while unregistered users will get a custom error message.
+This plugin allows you to publish a full inventory on a frontend page with a simple shortcode. Unregistered users will get a custom error message.
 
 == Description ==
 
@@ -37,21 +37,8 @@ http://support.mirkogrewing.eu/
 
 == Frequently asked questions ==
 
-= Is there anything I can configure? =
-
-Just the error message. But hey... that's something! :P
-
-= It messed up with my template, what I can do? =
-
-You are unlucky. The plugin uses a simple table and a couple of minimal styles. Unless you edit the styles directly in the plugin, you may want to wait for further releases: customizable styles are on the roadmap...
-
-= Hey, most of the visitors get an error message! =
-
-Only registered users can see that page. You can modify the error message in the settings.
-
-= I get only the header of the table but no product, why is that? =
-
-Please notice that only product with limited stock units will be listed. If you don't get any product in the least, check whether there is at least one product with quantity set.
+= Where I can find the FAQ? =
+[Here!](http://support.mirkogrewing.eu/kb/index.php "FAQ")
 
 == Changelog ==
 
@@ -78,4 +65,3 @@ Please notice that only product with limited stock units will be listed. If you 
 == Upgrade notice ==
 
 Nothing you should worry about! ;)
-
