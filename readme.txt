@@ -4,7 +4,7 @@ Donate link: http://cl.ly/0m1h2L3u0K3Y
 Tags: WooCommerce, inventory, stock, variations
 Requires at least: 3.3
 Tested up to: 3.5.2
-Stable tag: 0.4.2
+Stable tag: 0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,7 @@ http://support.mirkogrewing.eu/
 == Screenshots ==
 
 1. The inventory on a frontpage.
+2. Custom error message in settings.
 
 == Frequently asked questions ==
 
@@ -41,6 +42,10 @@ http://support.mirkogrewing.eu/
 [Here!](http://support.mirkogrewing.eu/kb/index.php "FAQ")
 
 == Changelog ==
+
+= v0.5 =
+* Settings moved inside WooCommerce Settings > Catalog.
+* Code optimization.
 
 = v0.4.2 =
 * Added links to support and official webpage.
@@ -64,4 +69,4 @@ http://support.mirkogrewing.eu/
 
 == Upgrade notice ==
 
-Nothing you should worry about! ;)
+Settings have been moved inside WooCommerce Settings, Catalog tab.
