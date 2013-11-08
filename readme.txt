@@ -3,7 +3,7 @@ Contributors: rashef
 Donate link: http://cl.ly/0m1h2L3u0K3Y
 Tags: WooCommerce, inventory, stock, variations
 Requires at least: 3.3
-Tested up to: 3.5.2
+Tested up to: 3.7.1
 Stable tag: 0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -16,14 +16,15 @@ What is WooCommerce Frontend Inventory for?
 
 Do you want to provide some users with a **full inventory** of your WooCommerce installation without giving them access to the WooCommerce configuration area in the Dashboard?  
 
-This plugin allows you to publish a full inventory on a frontend page with a simple shortcode. Every registerd user will be able to view it, while unregistered users will get a custom error message.  
+This plugin allows you to publish a full inventory on a frontend page with a simple shortcode. **Every registerd user** will be able to view it, while unregistered users will get an error message.
 
-**Please note** this is an early stage version of the plugin and it is very limited at the moment. It just prints the inventory in a page inside the template you are using (it might actually conflict with it for a couple of styles I hard-coded into the file).   
+Special thanks to [Mike Jolley](http://profiles.wordpress.org/mikejolley/) who provided the [initial script](https://t.co/CtLxf1XCVN).
 
-Do you want to raise a bug, propose a change, request for support or simply congratulate me? The Official Page of the plugin is waiting for your voice!  
+**Please note** this is an early stage version of the plugin and it is very limited at the moment. It just prints the inventory in a page and it might actually conflict with the theme you are using because of some styles hard-coded into the plugin.
+
+Do you want to raise a bug, propose a change, request for support or simply say hi? The Official Page of the plugin is waiting for your voice!  
 
 http://www.mirkogrewing.eu/woocommerce-frontend-inventory/   
-http://support.mirkogrewing.eu/  
 
 == Installation ==
 
@@ -39,7 +40,7 @@ http://support.mirkogrewing.eu/
 == Frequently asked questions ==
 
 = Where I can find the FAQ? =
-[Here!](http://support.mirkogrewing.eu/kb/index.php "FAQ")
+[Here!](http://support.mirkogrewing.it/kb/index.php "FAQ")
 
 == Changelog ==
 
