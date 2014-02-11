@@ -4,7 +4,7 @@
 Plugin Name: WooCommerce - Frontend Inventory
 Plugin URI: http://www.mirkogrewing.eu/woocommerce-frontend-inventory/
 Description: This plugin provides a template that can be applied to a page in order to show a full inventory of products in WooCommerce.
-Version: 0.5
+Version: 0.6
 Author: Mirko Grewing
 Author URI: http://www.mirkogrewing.eu
 
@@ -69,7 +69,11 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			
 			function plugin_init() {
 				if ( $this->woofi_enabled ) {
-					function get_inventory() {
+					function get_inventory($atts) {
+						extract( shortcode_atts( array(
+								'orderby'	=> 'title',		// ORDER BY
+								'sort'		=> 'ASC',		// Sorting
+						), $atts ) );
 						//$options = get_option('woofi_options');
 						//$out = (!isset($options['errormessage_template']) || $options['errormessage_template']=="") ? 'Sorry you cannot access here!' : $options['errormessage_template'];
 						$out = get_option('woofi_error_message', 'Sorry you cannot access here' );
@@ -97,8 +101,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 									'post_type'         => 'product',
 									'post_status'       => 'publish',
 									'posts_per_page'    => -1,
-									'orderby'           => 'title',
-									'order'             => 'ASC',
+									'orderby'           => $orderby,
+									'order'             => $sort,
 									'meta_query'        => array(
 																array(
 																	'key'   => '_manage_stock',
