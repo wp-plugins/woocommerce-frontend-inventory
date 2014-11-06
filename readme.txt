@@ -84,4 +84,7 @@ Please check whether or not they are in stock and there is a quantity defined.
 
 == Upgrade notice ==
 
-Settings have been moved inside WooCommerce Settings, Catalog tab.
+* Cleaning of the code to ensure best support for Wordpress 4.
+* Added localization support.
+* Added Italian localization.
+* Added Spanish localization.
