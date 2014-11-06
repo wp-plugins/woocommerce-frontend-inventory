@@ -1,10 +1,10 @@
 === WooCommerce Frontend Inventory ===
 Contributors: rashef
-Donate link: http://cl.ly/0m1h2L3u0K3Y
+Donate link: http://cl.ly/2C2W181j1G2g
 Tags: WooCommerce, inventory, stock, variations
 Requires at least: 3.3
-Tested up to: 3.8.1
-Stable tag: 0.6
+Tested up to: 4.0.0
+Stable tag: 0.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,14 +27,9 @@ For example:
 
 This plugin allows you to publish a full inventory on a frontend page with a simple shortcode. **Every registerd user** will be able to view it, while unregistered users will get an error message.
 
+Please also note that the current version will not print any product marked in stock but with UNDEFINED quantity. A future version will consider this case.
+
 Special thanks to [Mike Jolley](http://profiles.wordpress.org/mikejolley/) who provided the [initial script](https://t.co/CtLxf1XCVN).
-
-** Please Note ** 
-This plugin is still a beta version and quite far from being completed. Even if I am doing my best to ensure it is working properly and to test it on different environments you might still find bugs.
-
-Do you want to raise a bug, propose a change, request for support or simply say hi? The Official Page of the plugin is waiting for your voice!  
-
-http://www.mirkogrewing.eu/woocommerce-frontend-inventory/   
 
 == Installation ==
 
@@ -49,10 +44,16 @@ http://www.mirkogrewing.eu/woocommerce-frontend-inventory/
 
 == Frequently asked questions ==
 
-= Where I can find the FAQ? =
-[Here!](http://support.mirkogrewing.it/kb/index.php "FAQ")
+= Many products are not listed, why? =
+Please check whether or not they are in stock and there is a quantity defined.
 
 == Changelog ==
+
+= v0.6.1 = 
+* Cleaning of the code to ensure best support for Wordpress 4.
+* Added localization support.
+* Added Italian localization.
+* Added Spanish localization.
 
 = v0.6 = 
 * The shortcode now support parameters to sort items.
