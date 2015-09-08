@@ -3,11 +3,11 @@
     Plugin Name: WooCommerce - Frontend Inventory
     Plugin URI: http://www.mirkogrewing.eu/woocommerce-frontend-inventory/
     Description: This plugin provides a template that can be applied to a page in order to show a full inventory of products in WooCommerce.
-    Version: 0.6.1
+    Version: 0.7
     Author: Mirko Grewing
     Author URI: http://www.mirkogrewing.it
 
-	Copyright: © 2013 Mirko Grewing (email : mirko.grewing@live.com)
+	Copyright: © 2013 Mirko Grewing (email : mirko@grewing.co.uk)
 	License: GNU General Public License v3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -20,9 +20,9 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
          *
          * @category Plugin
          * @package  Class
-         * @author   Mirko Grewing <mirko.grewing@live.com>
+         * @author   Mirko Grewing <mirko@grewing.co.uk>
          * @license  http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
-         * @version  0.6
+         * @version  0.7
          * @link     http://www.mirkogrewing.it
          */
         class WC_WooFI
@@ -88,6 +88,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                                 array(
                                     'orderby'	=> 'title',
                                     'sort'		=> 'ASC',
+                                    'user_id'	=> '',
                                 ), $atts
                             )
                         );
@@ -115,6 +116,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                                     'posts_per_page'    => -1,
                                     'orderby'           => $orderby,
                                     'order'             => $sort,
+                                    'author'			=> $user_id,
                                     'meta_query'        => array(
                                                             array(
                                                                 'key'   => '_manage_stock',
