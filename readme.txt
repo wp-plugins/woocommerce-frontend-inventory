@@ -17,7 +17,7 @@ What is WooCommerce Frontend Inventory for?
 Do you want to provide some users with an inventory of your WooCommerce installation without giving them access to the WooCommerce configuration area in the Dashboard? 
 
 Place the shortcode, with the needed parameters where you want the inventory to appear. Syntax is:
-`[woofi orderby={title|sku|stock} sort={ASC|DESC} author_id={}]`
+`[woofi orderby={title|sku|stock} sort={ASC|DESC} user_id={}]`
 
 For example:
 
